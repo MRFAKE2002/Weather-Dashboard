@@ -1,6 +1,3 @@
-//! MUI
-import { Box } from "@mui/material";
-
 interface WeatherIconMap {
   [key: string]: {
     icon: string;
