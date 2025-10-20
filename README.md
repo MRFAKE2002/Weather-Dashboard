@@ -7,7 +7,7 @@ It displays **city-based weather information**, **local time**, **two-week forec
 
 ## 📸 Preview
 
-_(Add screenshots or GIFs here if you want)_
+<img src="/Weather-Dashboard/public/project.webp" alt="Dashboard Preview" width="600" />
 
 ---
 
