@@ -1,75 +1,140 @@
-# React + TypeScript + Vite
+# 🌦️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather dashboard built with **React**, **TypeScript**, and **Material UI (MUI)**.  
+It displays **city-based weather information**, **local time**, **two-week forecasts**, and an **average monthly temperature chart** — all with **dark/light mode** and **English/Persian localization** support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## React Compiler
+_(Add screenshots or GIFs here if you want)_
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🌍 **Multi-language support** (English / Persian)
+- 🌗 **Dark / Light mode** toggle
+- 🏙️ **City selection** with timezone-based local time
+- 📊 **Dynamic line chart** for average monthly temperature
+- 🗓️ **Two-week forecast cards**
+- 🔁 **Real-time data formatting with dayjs**
+- 💅 Fully styled with **Material UI (MUI)** and **custom theme**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧩 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Category                | Technology                                                                   |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| **Framework**           | [React 18+](https://react.dev/)                                              |
+| **Language**            | [TypeScript](https://www.typescriptlang.org/)                                |
+| **UI Library**          | [Material UI (MUI)](https://mui.com/)                                        |
+| **Charting**            | [Recharts](https://recharts.org/en-US/)                                      |
+| **State Management**    | Custom React Context (e.g. `WeatherContext`, `ThemeModeContext`)             |
+| **Localization (i18n)** | [react-i18next](https://react.i18next.com/)                                  |
+| **Date/Time**           | [dayjs](https://day.js.org/) with `jalaliday`, `utc`, and `timezone` plugins |
+| **Styling**             | MUI SX prop + custom palette with dark/light themes                          |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🌐 Localization
+
+The app supports **English** and **Persian**.
+
+- Persian mode:
+  - Right-to-left layout
+  - Jalali (شمسی) date and month names
+  - Reversed chart direction (Y-axis on right side)
+- English mode:
+  - Left-to-right layout
+  - Gregorian calendar
+
+You can easily switch languages using the **language toggle** (powered by `react-i18next`).
+
+---
+
+## 🕶️ Dark & Light Mode
+
+- Implemented using a **custom MUI theme context** (`ThemeModeContext`)
+- Automatically switches palette and chart colors
+- Fully responsive design optimized for both modes
+
+---
+
+## 📊 Charts
+
+- Built with **Recharts**
+- Gradient line for monthly temperature
+- When in **Persian mode**:
+  - The chart direction is reversed (right-to-left)
+  - Month labels are shown in Persian (e.g. فروردین, اردیبهشت, ...)
+
+---
+
+## 🧠 Data Sources
+
+All data are **mock/static** for demonstration:
+
+- `twoWeekForecast` → static 14-day forecast data
+- `monthlyData` → average monthly temperature for several cities
+- `CITIES` → predefined city list with timezone info
+
+You can later replace them with live API data (e.g. OpenWeatherMap).
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/weather-dashboard.git
+cd weather-dashboard
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# or
+
+yarn install
+
+3. **Run the project**
+
+npm start
+
+# or
+
+yarn start
+
+4. **Open in browser**
+
+http://localhost:5173
+
+## 🧾 Example Data
+
+🌡️ Monthly Temperature Example
+
+const monthlyData = {
+Tehran: [
+{ month: "فروردین", temp: 20 },
+{ month: "اردیبهشت", temp: 25 },
+...
+],
+"San Francisco": [
+{ month: "Jan", temp: 12 },
+{ month: "Feb", temp: 14 },
+...
+],
+};
+
+## 🧑‍💻 Author
+
+Roozbeh Badali
+Frontend Developer | React & TypeScript Enthusiast
+
+## 📜 License
+
+This project is licensed under the MIT License.
