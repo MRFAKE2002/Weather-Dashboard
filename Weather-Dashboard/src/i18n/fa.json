@@ -1,0 +1,81 @@
+{
+  "login": {
+    "name": "نام",
+    "login": "ورود",
+    "namePlaceholder": "نام خود را وارد کنید",
+    "submit": "ورود",
+    "languageLabel": "زبان",
+    "validation_name_required": "لطفاً نام خود را وارد کنید"
+  },
+  "header": {
+    "title": "داشبورد آب و هوا",
+    "searchYourLocation": "مکان مورد نظر را جستجو کنید",
+    "logout": "خروج",
+    "dark": "تاریک",
+    "light": "روشن",
+    "mode": "حالت",
+    "language": "زبان",
+    "En": "انگلیسی",
+    "Fa": "فارسی"
+  },
+  "footer": {
+    "title": "همه حقوق این سایت برای شرکت مهندسی نادین صدر آریا محفوظ است.",
+    "contact": "تماس با ما"
+  },
+  "dashboard": {
+    "high": "پیشینه",
+    "low": "کمینه",
+    "feelsLike": "درجه احساس می شود",
+    "averageMonthlyTemperature": "میانگین دمای ماهانه",
+    "2weeksForecast": "پیش بینی 2 هفته"
+  },
+  "city": {
+    "San Francisco": "سن فرانسیسکو",
+    "Tehran": "تهران",
+    "London": "لندن",
+    "New York": "نیویورک",
+    "Paris": "پاریس",
+    "Tokyo": "توکیو",
+    "Sydney": "سیدنی"
+  },
+  "day": {
+    "Mon": "دوشنبه",
+    "Tue": "سه شنبه",
+    "Wed": "چهارشنبه",
+    "Thu": "پنجشنبه",
+    "Fri": "جمعه",
+    "Sat": "شنبه",
+    "Sun": "یکشنبه",
+    "Monday": "دوشنبه",
+    "Tuesday": "سه شنبه",
+    "Wednesday": "چهارشنبه",
+    "Thursday": "پنجشنبه",
+    "Friday": "جمعه",
+    "Saturday": "شنبه",
+    "Sunday": "یکشنبه",
+    "Today": "امروز"
+  },
+  "weather": {
+    "Clear": "پاک",
+    "Cloudy": "ابری",
+    "Rain": "بارانی",
+    "Thunderstorm": "رعد و برق",
+    "Snow": "برفی",
+    "Mist": "مه"
+  },
+
+  "month": {
+    "jan": "فروردین",
+    "feb": "اردیبهشت",
+    "mar": "خرداد",
+    "apr": "تیر",
+    "may": "مرداد",
+    "jun": "شهریور",
+    "jul": "مهر",
+    "aug": "آبان",
+    "sep": "آذر",
+    "oct": "دی",
+    "nov": "بهمن",
+    "dec": "اسفند"
+  }
+}

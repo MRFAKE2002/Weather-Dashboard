@@ -1,0 +1,80 @@
+{
+  "login": {
+    "name": "Name",
+    "login": "Login",
+    "namePlaceholder": "Enter Your name",
+    "submit": "Login",
+    "languageLabel": "Language",
+    "validation_name_required": "Please enter your name"
+  },
+  "header": {
+    "title": "Weather Dashboard",
+    "searchYourLocation": "Search Your Location",
+    "logout": "Exit",
+    "dark": "Dark",
+    "light": "Light",
+    "mode": "Mode",
+    "language": "Language",
+    "En": "En",
+    "Fa": "Fa"
+  },
+  "footer": {
+    "title": "All rights of this site are reserved for Nadin Sadr Aria Engineering Company.",
+    "contact": "contact us"
+  },
+  "dashboard": {
+    "high": "High",
+    "low": "Low",
+    "feelsLike": "Feels Like",
+    "averageMonthlyTemperature": "Average Monthly Temperature",
+    "2weeksForecast": "2 weeks Forecast"
+  },
+  "city": {
+    "San Francisco": "San Francisco",
+    "Tehran": "Tehran",
+    "London": "London",
+    "New York": "New York",
+    "Paris": "Paris",
+    "Tokyo": "Tokyo",
+    "Sydney": "Sydney"
+  },
+  "day": {
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat",
+    "Sun": "Sun",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday",
+    "Sunday": "Sunday",
+    "Today": "Today"
+  },
+  "weather": {
+    "Clear": "Clear",
+    "Cloudy": "Cloudy",
+    "Rain": "Rain",
+    "Thunderstorm": "Thunderstorm",
+    "Snow": "Snow",
+    "Mist": "Mist"
+  },
+  "month": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  }
+}
