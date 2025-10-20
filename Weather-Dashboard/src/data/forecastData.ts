@@ -1,0 +1,16 @@
+export const twoWeekForecast = [
+  { day: "Today", icon: "/cloudy.webp", temp: 26 },
+  { day: "Mon", icon: "/cloudy.webp", temp: 27 },
+  { day: "Tue", icon: "/clean.webp", temp: 28 },
+  { day: "Wed", icon: "/rainCloud.webp", temp: 25 },
+  { day: "Thu", icon: "/thunderstorm.webp", temp: 24 },
+  { day: "Fri", icon: "/cloudy.webp", temp: 26 },
+  { day: "Sat", icon: "/cloudy.webp", temp: 27 },
+  { day: "Sun", icon: "/clean.webp", temp: 28 },
+  { day: "Mon", icon: "/rainCloud.webp", temp: 25 },
+  { day: "Tue", icon: "/thunderstorm.webp", temp: 24 },
+  { day: "Wed", icon: "/cloudy.webp", temp: 26 },
+  { day: "Thu", icon: "/cloudy.webp", temp: 27 },
+  { day: "Fri", icon: "/clean.webp", temp: 28 },
+  { day: "Sat", icon: "/rainCloud.webp", temp: 25 },
+];
